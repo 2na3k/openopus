@@ -1,0 +1,36 @@
+[project]
+name = "openopus"
+version = "0.1.0"
+description = "OpenOpus - AI-powered music generation and processing toolkit"
+readme = "README.md"
+authors = [
+    { name = "fisherman", email = "57496995+2na3k@users.noreply.github.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11",
+    "mypy>=1.15",
+    "pre-commit>=4.0",
+]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+ignore_missing_imports = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
