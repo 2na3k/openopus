@@ -1,7 +1,7 @@
 [project]
 name = "openopus"
 version = "0.1.0"
-description = "OpenOpus - AI-powered music generation and processing toolkit"
+description = "wip"
 readme = "README.md"
 authors = [
     { name = "fisherman", email = "57496995+2na3k@users.noreply.github.com" }
