@@ -1,8 +1,12 @@
 """Tests for neural network kernel."""
 
-import mlx.core as mx
+import pytest
 
-from openopus.nn import MLP, swish
+mlx = pytest.importorskip("mlx")
+
+import mlx.core as mx  # noqa: E402
+
+from openopus.nn import MLP, swish  # noqa: E402
 
 
 def test_swish() -> None:

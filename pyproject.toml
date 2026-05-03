@@ -7,7 +7,10 @@ authors = [
     { name = "fisherman", email = "57496995+2na3k@users.noreply.github.com" }
 ]
 requires-python = ">=3.9"
-dependencies = [
+dependencies = []
+
+[project.optional-dependencies]
+mlx = [
     "mlx>=0.29.3",
 ]
 

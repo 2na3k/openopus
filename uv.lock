@@ -471,7 +471,9 @@ wheels = [
 name = "openopus"
 version = "0.1.0"
 source = { editable = "." }
-dependencies = [
+
+[package.optional-dependencies]
+mlx = [
     { name = "mlx", version = "0.29.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
     { name = "mlx", version = "0.31.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
 ]
@@ -488,7 +490,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "mlx", specifier = ">=0.29.3" }]
+requires-dist = [{ name = "mlx", marker = "extra == 'mlx'", specifier = ">=0.29.3" }]
 
 [package.metadata.requires-dev]
 dev = [
